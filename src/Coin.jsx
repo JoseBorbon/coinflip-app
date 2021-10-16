@@ -9,7 +9,7 @@ class Coin extends Component {
       <img
         src={this.props.tossResult === 'heads' ? heads : tails}
         alt="coin"
-        className="Coin"
+        className={`Coin ${this.props.flipping}`}
       />
     );
   }
